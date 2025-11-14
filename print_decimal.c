@@ -3,24 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   print_decimal.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doabrour <doabrour@student.42.fr>          +#+  +:+       +#+        */
+/*   By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 17:59:04 by doabrour          #+#    #+#             */
-/*   Updated: 2025/11/14 18:01:44 by doabrour         ###   ########.fr       */
+/*   Updated: 2025/11/14 23:10:55 by douaeoxo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <unistd.h>
+
 int	print_decimal(int n)
 {
-	int len;
-
-	len = 0;
-	while(n < 0)
-	{
-		n = n + '0';
-		write(1, &n, 1);
-		n /= 10;
-		len++;
-	}
-	return (len);
+	return (print_integer(n));
+}
+int main(void)
+{
+    printf("%u\n", print_decimal(-21323213));
 }
