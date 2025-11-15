@@ -6,9 +6,11 @@
 /*   By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 23:26:19 by douaeoxo          #+#    #+#             */
-/*   Updated: 2025/11/14 23:30:13 by douaeoxo         ###   ########.fr       */
+/*   Updated: 2025/11/15 13:47:06 by douaeoxo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int print_lower_hexadecimal(unsigned long long n)
 {

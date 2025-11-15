@@ -6,9 +6,11 @@
 /*   By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 23:08:15 by douaeoxo          #+#    #+#             */
-/*   Updated: 2025/11/14 23:33:43 by douaeoxo         ###   ########.fr       */
+/*   Updated: 2025/11/15 13:47:10 by douaeoxo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int print_pointer(void *ptr)
 {

@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   print_integer.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doabrour <doabrour@student.42.fr>          +#+  +:+       +#+        */
+/*   By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 18:01:46 by doabrour          #+#    #+#             */
-/*   Updated: 2025/11/14 18:02:30 by doabrour         ###   ########.fr       */
+/*   Updated: 2025/11/15 13:46:58 by douaeoxo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "ft_printf"
-#include <stdio.h>
-#include <unistd.h>
+#include "ft_printf.h"
 
 int	print_integer(int n)
 {

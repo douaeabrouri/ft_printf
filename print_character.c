@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   print_character.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: doabrour <doabrour@student.42.fr>          +#+  +:+       +#+        */
+/*   By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 15:56:49 by doabrour          #+#    #+#             */
-/*   Updated: 2025/11/14 17:59:00 by doabrour         ###   ########.fr       */
+/*   Updated: 2025/11/15 13:46:46 by douaeoxo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int	print_character(char c)
 {

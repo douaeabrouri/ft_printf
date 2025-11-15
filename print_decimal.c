@@ -6,12 +6,11 @@
 /*   By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 17:59:04 by doabrour          #+#    #+#             */
-/*   Updated: 2025/11/14 23:10:55 by douaeoxo         ###   ########.fr       */
+/*   Updated: 2025/11/15 13:46:54 by douaeoxo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+#include "ft_printf.h"
 
 int	print_decimal(int n)
 {

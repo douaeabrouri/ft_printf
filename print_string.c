@@ -6,9 +6,11 @@
 /*   By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 23:34:16 by douaeoxo          #+#    #+#             */
-/*   Updated: 2025/11/14 23:39:13 by douaeoxo         ###   ########.fr       */
+/*   Updated: 2025/11/15 14:23:39 by douaeoxo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int print_string(char *str)
 {

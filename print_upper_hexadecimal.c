@@ -6,9 +6,11 @@
 /*   By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 23:37:38 by douaeoxo          #+#    #+#             */
-/*   Updated: 2025/11/14 23:38:12 by douaeoxo         ###   ########.fr       */
+/*   Updated: 2025/11/15 13:47:30 by douaeoxo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int print_upper_hexadecimal(unsigned long long n)
 {
