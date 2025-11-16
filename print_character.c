@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_character.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: doabrour <doabrour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 15:56:49 by doabrour          #+#    #+#             */
-/*   Updated: 2025/11/15 13:46:46 by douaeoxo         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:19:04 by doabrour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 int	print_character(char c)
 {
-	write(1, &c, 1);
-	return (1);
+	return (write(1, &c, 1));
 }

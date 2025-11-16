@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: douaeoxo <douaeoxo@student.42.fr>          +#+  +:+       +#+         #
+#    By: doabrour <doabrour@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/14 15:48:53 by doabrour          #+#    #+#              #
-#    Updated: 2025/11/15 14:40:49 by douaeoxo         ###   ########.fr        #
+#    Updated: 2025/11/16 19:19:54 by doabrour         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ define RAINBOW
 $(RED)$(1)$(YELLOW)$(2)$(GREEN)$(3)$(CYAN)$(4)$(BLUE)$(5)$(MAGENTA)$(6)$(RESET)
 endef
 
-NAME := ft_printf.a
+NAME := libftprintf.a
 
 src := 	ft_printf.c print_character.c  print_decimal.c print_integer.c print_lower_hexadecimal.c \
 		print_upper_hexadecimal.c print_pointer.c print_string.c print_unsigned.c
@@ -38,14 +38,26 @@ all : $(NAME)
 $(NAME): $(OBG)
 	@$(LIB) $(NAME) $?
 
+test: main.c
+	@cc $(CFLAGS) main.c $(NAME) -o test 
+
+%: %.o main.c 
+	@cc $(CFLAGS) $^ -o $@
+
 %.o : %.c ft_printf.h
 	@$(CC) $(CFLAGS) -c $< -o $@
+
+main.c:
+	@echo "int main() {return 0;}" > $@
 
 clean:
 	@rm -f $(OBG)
 
 fclean :clean
 	@rm -f $(NAME)
+
+tclean: fclean
+	@rm -f test main.c 
 
 re:
 	clean all
