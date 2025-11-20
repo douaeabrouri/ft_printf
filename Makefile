@@ -47,7 +47,6 @@ fclean :clean
 tclean: fclean
 	@rm -f test main.c 
 
-re:
-	clean all
+re: clean all
 
 .PHONY: clean re all fclean tclean
