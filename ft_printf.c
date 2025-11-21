@@ -39,20 +39,21 @@ int	ft_printf(const char *str, ...)
 {
 	va_list	list;
 	int		count;
-	int		w;
 
 	if (write(1, NULL, 0) < 0)
 		return (-1);
 	count = 0;
-	w = 0;
 	va_start(list, str);
 	while (*str)
 	{
 		if (*str == '%')
+		{
+			if (*(str + 1))
 			count += compare(*(++str), list);
+		}
 		else
 			count += write(1, str, 1);
-		count += w;
+
 		str++;
 	}
 	va_end(list);
